@@ -1,0 +1,71 @@
+/*=-=-=-=-=-=-=-=-=-= Google Fonts =-=-=-=-=-=*/
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body{ margin:0px; padding:0px;background:lightgray; width: 600px;margin:auto; font-family: 'Pangolin', cursive;}
+
+.bodydiv{ background-color:green; text-align:left;padding:50px;border:2px outset; height:900px;font-size:20px;color:white;}
+
+.bodydiv h1 { text-align:center;margin-bottom:20px;margin-top:0px;color:yellow;}
+
+
+.bodydiv form input {
+	padding:10px;
+	margin:10px;
+	
+}
+.bodydiv form select{
+	padding:10px;
+	margin:10px;
+	border-radius: 4px;
+	border: 0;
+}
+.bodydiv form input{
+	border-radius: 5px;
+	border: 0;
+	width: 250px;
+}
+.bodydiv form input:last-child {
+	background:yellow;
+	border:none;
+	float:right;
+	width: 150px;
+	transition: .3s;
+}
+.bodydiv form input:last-child:hover{
+	background:#BFBFBF;
+}
+.gender-field input{
+	width: 20px !important;
+}
+
+.balls {
+    border-radius: 50%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 60%;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #red {
+    background: red;
+    left: 25%;
+    animation-timing-function: linear;
+  }
+  #blue {
+    background: blue;
+    left: 50%;
+    animation-timing-function: ease-out;
+  }
+  #green {
+    background: green;
+    left: 75%;
+    animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+  }
+
+  @keyframes jump {
+    50% {
+      top: 10%;
+    }
+  }
